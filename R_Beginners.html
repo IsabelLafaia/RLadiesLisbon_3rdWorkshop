@@ -38,7 +38,7 @@
   </aside>
   <hgroup class="auto-fadein">
     <h1>Linguagem R para iniciados</h1>
-    <h2>24 March 2017</h2>
+    <h2>25 March 2017</h2>
     <p><br/></p>
   </hgroup>
   <article></article>  
@@ -381,7 +381,7 @@ repetida 2 vezes.</p>
 
 <h3><strong>Exercício 5:</strong></h3>
 
-<p>Aceder à classificação (variável Class) do 3o. filme.</p>
+<p>Aceder à classificação (variável Class) do 3º filme.</p>
 
   </article>
   <!-- Presenter Notes -->
@@ -502,7 +502,7 @@ Title = c(&quot;The Godfather&quot;, &quot;The Terminator&quot;, &quot;La La Lan
 df
 </code></pre>
 
-<pre><code>## # A tibble: 6 � 3
+<pre><code>## # A tibble: 6 × 3
 ##      ID Duration          Title
 ##   &lt;int&gt;    &lt;dbl&gt;          &lt;chr&gt;
 ## 1     1      175  The Godfather
@@ -542,7 +542,7 @@ df
   <article data-timings="">
     <h3><strong>Exercício 6</strong></h3>
 
-<p>Completar o código com os dados que faltam e armazenar o resultado numa dataframe com o nome Filmes</p>
+<p>Completar o código com os dados que faltam. Armazenar o resultado numa dataframe com o nome Filmes.</p>
 
 <pre><code class="r">library(tidyverse)
 data_frame(ID = 1:6, 
@@ -564,7 +564,7 @@ Title = c(&quot;The Godfather&quot;, &quot;The Terminator&quot;, &quot;La La Lan
 Filmes[2,2]
 </code></pre>
 
-<pre><code>## # A tibble: 1 � 1
+<pre><code>## # A tibble: 1 × 1
 ##            Title
 ##            &lt;chr&gt;
 ## 1 The Terminator
@@ -621,7 +621,7 @@ Filmes$Title
 <pre><code class="r">head(Filmes) # Ver as primeiras 6 observações
 </code></pre>
 
-<pre><code>## # A tibble: 6 � 6
+<pre><code>## # A tibble: 6 × 6
 ##      ID          Title   Genre Duration Rating For18Plus
 ##   &lt;int&gt;          &lt;chr&gt;   &lt;chr&gt;    &lt;int&gt;  &lt;dbl&gt;     &lt;lgl&gt;
 ## 1     1  The Godfather   Drama      175    9.2      TRUE
@@ -646,7 +646,7 @@ Filmes$Title
 <pre><code class="r">head(Filmes, 3) # Ver apenas 3 observações
 </code></pre>
 
-<pre><code>## # A tibble: 3 � 6
+<pre><code>## # A tibble: 3 × 6
 ##      ID          Title   Genre Duration Rating For18Plus
 ##   &lt;int&gt;          &lt;chr&gt;   &lt;chr&gt;    &lt;int&gt;  &lt;dbl&gt;     &lt;lgl&gt;
 ## 1     1  The Godfather   Drama      175    9.2      TRUE
@@ -718,7 +718,7 @@ Filmes$Title
 <pre><code class="r">Filmes[complete.cases(Filmes),]
 </code></pre>
 
-<pre><code>## # A tibble: 4 � 6
+<pre><code>## # A tibble: 4 × 6
 ##      ID          Title   Genre Duration Rating For18Plus
 ##   &lt;int&gt;          &lt;chr&gt;   &lt;chr&gt;    &lt;int&gt;  &lt;dbl&gt;     &lt;lgl&gt;
 ## 1     1  The Godfather   Drama      175    9.2      TRUE

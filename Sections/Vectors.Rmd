@@ -64,5 +64,5 @@ repetida 2 vezes.
 
 ### **Exercício 5:** 
 
-Aceder à classificação (variável Class) do 3o. filme.
+Aceder à classificação (variável Class) do 3º filme.
 

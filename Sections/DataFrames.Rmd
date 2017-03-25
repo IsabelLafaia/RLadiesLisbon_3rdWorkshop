@@ -25,7 +25,7 @@ Uma *dataframe* pode ser interpretada como:
 
 ### **Exercício 6** 
 
-Completar o código com os dados que faltam. Armazenar o resultado numa dataframe com o nome Filmes.
+Completar o código com os dados que faltam. Armazenar o resultado numa *dataframe* com o nome Filmes.
 ```{r, eval = FALSE}
 library(tidyverse)
 data_frame(ID = 1:6, 
@@ -88,8 +88,8 @@ View(Filmes) # Ver a dataframe completa
 
 ### **Exercício 7:** 
 
-Visualizar a data frame Filmes com o comando 'head'
+Visualizar a *dataframe* Filmes com o comando 'head'
 
 ### **Exercício 8:** 
 
-Criar uma nova data frame Filmes_Alt resultante da concatenaçao da data frame Filmes com o vector Class (ver exercício 4).
+Criar uma nova *dataframe* Filmes_Alt resultante da concatenaçao da *dataframe* Filmes com o vector Class (ver exercício 4).

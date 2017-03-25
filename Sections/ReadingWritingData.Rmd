@@ -5,7 +5,7 @@ library(tidyverse)
 df <- read_csv('C:/Users/GICpr/Desktop/exemplo.csv')
 ```
 
-Exercício 7
+Exercício 9
 ```{r}
 # Ler o ficheiro 'exemplo.csv' disponível na pasta meetup3
 

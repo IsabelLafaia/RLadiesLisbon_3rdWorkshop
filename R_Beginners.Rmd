@@ -133,7 +133,7 @@ Experimentar um cálculo à escolha.
 ```{r, eval = FALSE}
 if("swirl" %in% installed.packages() == FALSE){install.packages("swirl")} 
 library(swirl)
-install_from_swirl("R_Programming_Alt")
+install_from_swirl("R_Programming")
 swirl()
 # continue writing on the console
 ```
