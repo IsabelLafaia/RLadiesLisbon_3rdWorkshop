@@ -55,14 +55,19 @@ Genre[1]
 
 ### **Exercício 3:** 
 
-Criar vector For18Plus com valores de TRUE or FALSE, na ordem da tabela.
+* Criar vector For18Plus com valores na tabela.
 
-### **Exercício 4:** 
+* Aceder ao 3º elemento do vector For18Plus.
+```{r}
+# Filmes
 
-Criar vector Class com a sequência de valores "Bom", "Mau", "Mehh", 
-repetida 2 vezes.
-
-### **Exercício 5:** 
-
-Aceder à classificação (variável Class) do 3º filme.
+#      ID          Title   Genre Duration Rating For18Plus
+#   <int>          <chr>   <chr>    <int>  <dbl>     <lgl>
+# 1     1  The Godfather   Drama      175    9.2      TRUE
+# 2     2 The Terminator  Action      107    8.0     FALSE
+# 3     3     La La Land Musical      128    8.4     FALSE
+# 4     4   Ghostbusters  Comedy      105    7.8     FALSE
+# 5     5          Alien    <NA>       NA    6.1      TRUE
+# 6     6           <NA>  Sci-Fi      107    6.7     FALSE
+```
 

@@ -11,4 +11,4 @@ Title
 ```
 
 ### **Exercício 2**
-Criar a variável Genre com o valor "Drama"
+Criar a variável Genre com o valor "Drama".

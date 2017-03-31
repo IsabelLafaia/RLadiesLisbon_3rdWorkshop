@@ -1,13 +1,6 @@
 ## Ler dados a partir de ficheiros
 
-```{r, message=FALSE, eval = FALSE}
-library(tidyverse)
-df <- read_csv('C:/Users/GICpr/Desktop/exemplo.csv')
+```{r, message=FALSE}
+df <- read.csv('C:/Users/GICpr/Desktop/exemplo.csv')
+df
 ```
-
-Exercício 9
-```{r}
-# Ler o ficheiro 'exemplo.csv' disponível na pasta meetup3
-
-```
-

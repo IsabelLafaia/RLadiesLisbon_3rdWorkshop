@@ -1,7 +1,24 @@
 ## Valores em falta (missing values)
 
 NA significa "Not Available", "Not Applicable" ou "Not Announced"
+```{r}
+# Filmes
 
+#      ID          Title   Genre Duration Rating For18Plus
+#   <int>          <chr>   <chr>    <int>  <dbl>     <lgl>
+# 1     1  The Godfather   Drama      175    9.2      TRUE
+# 2     2 The Terminator  Action      107    8.0     FALSE
+# 3     3     La La Land Musical      128    8.4     FALSE
+# 4     4   Ghostbusters  Comedy      105    7.8     FALSE
+# 5     5          Alien    <NA>       NA    6.1      TRUE
+# 6     6           <NA>  Sci-Fi      107    6.7     FALSE
+```
+
+---
+
+## Valores em falta (missing values)
+
+Identificar NA's
 ```{r}
 is.na(Filmes$Title)
 ```
@@ -14,12 +31,27 @@ complete.cases(Filmes)
 
 ## Valores em falta (missing values)
 
+Propagaçao de NA's.
+```{r}
+3 + NA
+```
+
+```{r}
+x <- c(1, 0, 2, 4, NA, 5)
+mean(x)
+```
+
+```{r}
+mean(x, na.rm = TRUE)
+```
+
+---
+
+## Valores em falta (missing values)
+
 Eliminar NA's
-```{r}
-Filmes$Title[!is.na(Filmes$Title)]
-```
+
 
 ```{r}
-Filmes[complete.cases(Filmes),]
+Filmes[!is.na(Filmes$Title),]
 ```
-

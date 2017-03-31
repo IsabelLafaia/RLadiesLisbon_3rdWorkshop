@@ -4,7 +4,7 @@
   <title>Linguagem R para iniciados</title>
   <meta charset="utf-8">
   <meta name="description" content="Linguagem R para iniciados">
-  <meta name="author" content="">
+  <meta name="author" content="Por Isabel Lafaia, R-Ladies Lisboa">
   <meta name="generator" content="slidify" />
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
@@ -38,8 +38,8 @@
   </aside>
   <hgroup class="auto-fadein">
     <h1>Linguagem R para iniciados</h1>
-    <h2>25 March 2017</h2>
-    <p><br/></p>
+    <h2>1 de Abril de 2017</h2>
+    <p>Por Isabel Lafaia, R-Ladies Lisboa<br/></p>
   </hgroup>
   <article></article>  
 </slide>
@@ -51,7 +51,7 @@
     <h2>Apresentação da comunidade R-Ladies</h2>
   </hgroup>
   <article data-timings="">
-    <h3><em>&quot;A World-Wide organization to promote gender diversity in the R community&quot;</em></h3>
+    <h3>Objectivo: promover a diversidade de género na comunidade R.</h3>
 
 <p><img src="assets/img/RLadiesGlobal_LeafletMap.png" title="plot of chunk global map" alt="plot of chunk global map" width="600px" /></p>
 
@@ -61,9 +61,68 @@
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-2" style="background:;">
+<slide class="" id="slide-2">
+<hgroup>
+  
+</hgroup>
+<article class = 'flexbox vcenter'>
+<p><strong>Programar não é uma atividade a solo. Devemos fazer perguntas e cooperar. Todos passamos pelas mesmas dificuldades.</strong></p>
+
+</article>
+<!-- Presenter Notes -->
+</slide>
+<slide class="" id="slide-3" style="background:;">
   <hgroup>
-    <h2>Público-alvo:</h2>
+    <h2>Onde nos podem encontrar:</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>meetup.com</li>
+<li>github.com</li>
+<li>twitter</li>
+<li>facebook</li>
+<li>rladies.org</li>
+</ul>
+
+<h2>Contacto</h2>
+
+<p><strong><a href="mailto:lisboa@rladies.org">lisboa@rladies.org</a></strong></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Eventos futuros</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>22/04/2017: R, Machine Learning &amp; Microsoft Azure</li>
+<li>20/05/2017: R-Packages: Tidyverse, Dplyr</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-5">
+<hgroup>
+  <h2>Agradecimentos</h2>
+</hgroup>
+<article class = 'flexbox vcenter'>
+<p><img src="assets/img/R-LadiesGlobal_logo.png" title="plot of chunk r-ladies logo" alt="plot of chunk r-ladies logo" width="200px" /></p>
+
+<p><img src="assets/img/ilustat.png" title="plot of chunk ilustat logo" alt="plot of chunk ilustat logo" width="200px" /></p>
+
+<p><img src="assets/img/nmath_logo.png" title="plot of chunk ideia logo" alt="plot of chunk ideia logo" width="200px" /></p>
+
+</article>
+<!-- Presenter Notes -->
+</slide>
+<slide class="" id="slide-6" style="background:;">
+  <hgroup>
+    <h2>Público-alvo</h2>
   </hgroup>
   <article data-timings="">
     <ul>
@@ -76,26 +135,7 @@
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-3" style="background:;">
-  <hgroup>
-    <h2>Objetivos da sessão:</h2>
-  </hgroup>
-  <article data-timings="">
-    <p>No final da sessão deverão ser capazes de: </p>
-
-<ul>
-<li>  Identificar e classificar dados</li>
-<li>  Construir bases de dados</li>
-<li>  Perceber funções simples e a sua dinâmica </li>
-<li>  Ler dados a partir de ficheiros</li>
-<li>  Utilizar a ajuda do R-Studio</li>
-</ul>
-
-  </article>
-  <!-- Presenter Notes -->
-</slide>
-
-<slide class="" id="slide-4" style="background:;">
+<slide class="" id="slide-7" style="background:;">
   <hgroup>
     <h2>Conteúdos</h2>
   </hgroup>
@@ -103,7 +143,7 @@
     <ul>
 <li>Tipos de dados </li>
 <li>Atribuir valores a variáveis</li>
-<li>Estrutura de dados (vectores, matrizes e Data Frames)</li>
+<li>Estrutura de dados (vectores, matrizes e <em>dataframes</em>)</li>
 <li>Funções simples</li>
 <li>Ler dados a partir de ficheiros</li>
 </ul>
@@ -112,22 +152,24 @@
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-5">
-<hgroup>
-  
-</hgroup>
-<article class = 'flexbox vcenter'>
-<p><strong>Programar não é uma atividade a solo. Devemos fazer perguntas e cooperar. Todos passamos pelas mesmas dificuldades.</strong></p>
-
-</article>
-<!-- Presenter Notes -->
-</slide>
-<slide class="" id="slide-6" style="background:;">
+<slide class="" id="slide-8" style="background:;">
   <hgroup>
-    <h3>Podemos usar o R como uma calculadora</h3>
+    <h2>Introdução ao R-Studio</h2>
   </hgroup>
   <article data-timings="">
-    <pre><code class="r">2 + 2
+    
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-9" style="background:;">
+  <hgroup>
+    <h2>Introdução ao R-Studio</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>Podemos usar o R como uma calculadora</h3>
+
+<pre><code class="r">2 + 2
 </code></pre>
 
 <pre><code>## [1] 4
@@ -147,7 +189,7 @@
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-7" style="background:;">
+<slide class="" id="slide-10" style="background:;">
   <hgroup>
     <h2>Tipos de dados</h2>
   </hgroup>
@@ -157,7 +199,7 @@
 <pre><code class="r"># Filmes
 
 #      ID          Title   Genre Duration Rating For18Plus
-#   &lt;int&gt;          &lt;chr&gt;   &lt;chr&gt;    &lt;int&gt;  &lt;dbl&gt;     &lt;lgl&gt;
+#   &lt;int&gt;          &lt;chr&gt;  &lt;fctr&gt;    &lt;int&gt;  &lt;dbl&gt;     &lt;lgl&gt;
 # 1     1  The Godfather   Drama      175    9.2      TRUE
 # 2     2 The Terminator  Action      107    8.0     FALSE
 # 3     3     La La Land Musical      128    8.4     FALSE
@@ -170,7 +212,7 @@
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-8" style="background:;">
+<slide class="" id="slide-11" style="background:;">
   <hgroup>
     <h2>Tipos de dados</h2>
   </hgroup>
@@ -189,7 +231,7 @@
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-9" style="background:;">
+<slide class="" id="slide-12" style="background:;">
   <hgroup>
     <h2>Tipos de dados</h2>
   </hgroup>
@@ -216,7 +258,7 @@
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-10" style="background:;">
+<slide class="" id="slide-13" style="background:;">
   <hgroup>
     <h2>Atribuir valores a variáveis</h2>
   </hgroup>
@@ -236,13 +278,13 @@
 
 <h3><strong>Exercício 2</strong></h3>
 
-<p>Criar a variável Genre com o valor &quot;Drama&quot;</p>
+<p>Criar a variável Genre com o valor &quot;Drama&quot;.</p>
 
   </article>
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-11" style="background:;">
+<slide class="" id="slide-14" style="background:;">
   <hgroup>
     <h2>Estrutura de dados</h2>
   </hgroup>
@@ -257,7 +299,7 @@
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-12" style="background:;">
+<slide class="" id="slide-15" style="background:;">
   <hgroup>
     <h2>Estrutura de dados</h2>
   </hgroup>
@@ -272,7 +314,7 @@
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-13" style="background:;">
+<slide class="" id="slide-16" style="background:;">
   <hgroup>
     <h2>Vectores</h2>
   </hgroup>
@@ -300,7 +342,7 @@ ID
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-14" style="background:;">
+<slide class="" id="slide-17" style="background:;">
   <hgroup>
     <h2>Vectores</h2>
   </hgroup>
@@ -318,7 +360,7 @@ Duration
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-15" style="background:;">
+<slide class="" id="slide-18" style="background:;">
   <hgroup>
     <h2>Vectores</h2>
   </hgroup>
@@ -345,7 +387,7 @@ Rating
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-16" style="background:;">
+<slide class="" id="slide-19" style="background:;">
   <hgroup>
     <h2>Vectores</h2>
   </hgroup>
@@ -365,29 +407,35 @@ Genre[1]
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-17" style="background:;">
+<slide class="" id="slide-20" style="background:;">
   <hgroup>
     <h2>Vectores</h2>
   </hgroup>
   <article data-timings="">
     <h3><strong>Exercício 3:</strong></h3>
 
-<p>Criar vector For18Plus com valores de TRUE or FALSE, na ordem da tabela.</p>
+<ul>
+<li><p>Criar vector For18Plus com valores na tabela.</p></li>
+<li><p>Aceder ao 3º elemento do vector For18Plus.</p></li>
+</ul>
 
-<h3><strong>Exercício 4:</strong></h3>
+<pre><code class="r"># Filmes
 
-<p>Criar vector Class com a sequência de valores &quot;Bom&quot;, &quot;Mau&quot;, &quot;Mehh&quot;, 
-repetida 2 vezes.</p>
-
-<h3><strong>Exercício 5:</strong></h3>
-
-<p>Aceder à classificação (variável Class) do 3º filme.</p>
+#      ID          Title   Genre Duration Rating For18Plus
+#   &lt;int&gt;          &lt;chr&gt;   &lt;chr&gt;    &lt;int&gt;  &lt;dbl&gt;     &lt;lgl&gt;
+# 1     1  The Godfather   Drama      175    9.2      TRUE
+# 2     2 The Terminator  Action      107    8.0     FALSE
+# 3     3     La La Land Musical      128    8.4     FALSE
+# 4     4   Ghostbusters  Comedy      105    7.8     FALSE
+# 5     5          Alien    &lt;NA&gt;       NA    6.1      TRUE
+# 6     6           &lt;NA&gt;  Sci-Fi      107    6.7     FALSE
+</code></pre>
 
   </article>
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-18" style="background:;">
+<slide class="" id="slide-21" style="background:;">
   <hgroup>
     <h2>Matrizes</h2>
   </hgroup>
@@ -413,12 +461,18 @@ m
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-19" style="background:;">
+<slide class="" id="slide-22" style="background:;">
   <hgroup>
     <h2>Matrizes</h2>
   </hgroup>
   <article data-timings="">
     <p>Aceder a elementos da matriz:</p>
+
+<pre><code class="r">m[2,3] # Aceder a um elemento
+</code></pre>
+
+<pre><code>## [1] 14
+</code></pre>
 
 <pre><code class="r">m[2, ] # Aceder a uma linha
 </code></pre>
@@ -432,22 +486,16 @@ m
 <pre><code>## [1] 1 2 3 4 5 6
 </code></pre>
 
-<pre><code class="r">m[2,3] # Aceder a um elemento
-</code></pre>
-
-<pre><code>## [1] 14
-</code></pre>
-
   </article>
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-20" style="background:;">
+<slide class="" id="slide-23" style="background:;">
   <hgroup>
     <h2>Matrizes</h2>
   </hgroup>
   <article data-timings="">
-    <p>Concatenar matrizes:</p>
+    <p>Concatenar matrizes: adicionar coluna</p>
 
 <pre><code class="r">cbind(m,c(101,102,103,104,105,106)) # adicionar mais uma coluna
 </code></pre>
@@ -465,12 +513,12 @@ m
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-21" style="background:;">
+<slide class="" id="slide-24" style="background:;">
   <hgroup>
     <h2>Matrizes</h2>
   </hgroup>
   <article data-timings="">
-    <p>Concatenar matrizes:</p>
+    <p>Concatenar matrizes: adicionar linha</p>
 
 <pre><code class="r">rbind(m,c(101,102,103,104,105,106)) # adicionar mais uma linha
 </code></pre>
@@ -489,35 +537,48 @@ m
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-22" style="background:;">
+<slide class="" id="slide-25" style="background:;">
+  <hgroup>
+    <h2>Matrizes</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3><strong>Exercício 4:</strong></h3>
+
+<ul>
+<li><p>Criar uma matriz com os valores de 1 a 6, com 2 linhas e 3 colunas.</p></li>
+<li><p>Criar a mesma matriz mas com 3 linhas e 2 colunas.</p></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-26" style="background:;">
   <hgroup>
     <h2>Dataframes</h2>
   </hgroup>
   <article data-timings="">
     <p>Estruturas multidimensionais usadas para armazenar tabelas:</p>
 
-<pre><code class="r">library(tidyverse)
-df &lt;- data_frame(ID = 1:6, Duration = c(175,107,128,105,NA,107), 
+<pre><code class="r">Filmes &lt;- data.frame(ID = 1:6, Duration = c(175,107,128,105,NA,107), 
 Title = c(&quot;The Godfather&quot;, &quot;The Terminator&quot;, &quot;La La Land&quot;, &quot;Ghostbusters&quot;, &quot;Alien&quot;, NA))
-df
+Filmes
 </code></pre>
 
-<pre><code>## # A tibble: 6 × 3
-##      ID Duration          Title
-##   &lt;int&gt;    &lt;dbl&gt;          &lt;chr&gt;
-## 1     1      175  The Godfather
-## 2     2      107 The Terminator
-## 3     3      128     La La Land
-## 4     4      105   Ghostbusters
-## 5     5       NA          Alien
-## 6     6      107           &lt;NA&gt;
+<pre><code>##   ID Duration          Title
+## 1  1      175  The Godfather
+## 2  2      107 The Terminator
+## 3  3      128     La La Land
+## 4  4      105   Ghostbusters
+## 5  5       NA          Alien
+## 6  6      107           &lt;NA&gt;
 </code></pre>
 
   </article>
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-23" style="background:;">
+<slide class="" id="slide-27" style="background:;">
   <hgroup>
     <h2>Dataframes</h2>
   </hgroup>
@@ -535,25 +596,7 @@ df
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-24" style="background:;">
-  <hgroup>
-    <h2>Dataframes</h2>
-  </hgroup>
-  <article data-timings="">
-    <h3><strong>Exercício 6</strong></h3>
-
-<p>Completar o código com os dados que faltam. Armazenar o resultado numa dataframe com o nome Filmes.</p>
-
-<pre><code class="r">library(tidyverse)
-data_frame(ID = 1:6, 
-Title = c(&quot;The Godfather&quot;, &quot;The Terminator&quot;, &quot;La La Land&quot;, &quot;Ghostbusters&quot;, &quot;Alien&quot;, NA))
-</code></pre>
-
-  </article>
-  <!-- Presenter Notes -->
-</slide>
-
-<slide class="" id="slide-25" style="background:;">
+<slide class="" id="slide-28" style="background:;">
   <hgroup>
     <h2>Dataframes</h2>
   </hgroup>
@@ -564,25 +607,21 @@ Title = c(&quot;The Godfather&quot;, &quot;The Terminator&quot;, &quot;La La Lan
 Filmes[2,2]
 </code></pre>
 
-<pre><code>## # A tibble: 1 × 1
-##            Title
-##            &lt;chr&gt;
-## 1 The Terminator
+<pre><code>## [1] 107
 </code></pre>
 
 <pre><code class="r"># Aceder por nome da variável/coluna:
-Filmes$Title
+Filmes$Duration
 </code></pre>
 
-<pre><code>## [1] &quot;The Godfather&quot;  &quot;The Terminator&quot; &quot;La La Land&quot;     &quot;Ghostbusters&quot;  
-## [5] &quot;Alien&quot;          NA
+<pre><code>## [1] 175 107 128 105  NA 107
 </code></pre>
 
   </article>
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-26" style="background:;">
+<slide class="" id="slide-29" style="background:;">
   <hgroup>
     <h2>Dataframes</h2>
   </hgroup>
@@ -598,20 +637,20 @@ Filmes$Title
 <pre><code class="r">ncol(Filmes) # Número de variáveis/colunas
 </code></pre>
 
-<pre><code>## [1] 6
+<pre><code>## [1] 3
 </code></pre>
 
 <pre><code class="r">dim(Filmes) # Número de linhas e colunas
 </code></pre>
 
-<pre><code>## [1] 6 6
+<pre><code>## [1] 6 3
 </code></pre>
 
   </article>
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-27" style="background:;">
+<slide class="" id="slide-30" style="background:;">
   <hgroup>
     <h2>Dataframes</h2>
   </hgroup>
@@ -621,22 +660,20 @@ Filmes$Title
 <pre><code class="r">head(Filmes) # Ver as primeiras 6 observações
 </code></pre>
 
-<pre><code>## # A tibble: 6 × 6
-##      ID          Title   Genre Duration Rating For18Plus
-##   &lt;int&gt;          &lt;chr&gt;   &lt;chr&gt;    &lt;int&gt;  &lt;dbl&gt;     &lt;lgl&gt;
-## 1     1  The Godfather   Drama      175    9.2      TRUE
-## 2     2 The Terminator  Action      107    8.0     FALSE
-## 3     3     La La Land Musical      128    8.4     FALSE
-## 4     4   Ghostbusters  Comedy      105    7.8     FALSE
-## 5     5          Alien    &lt;NA&gt;       NA    6.1      TRUE
-## 6     6           &lt;NA&gt;  Sci-Fi      107    6.7     FALSE
+<pre><code>##   ID Duration          Title
+## 1  1      175  The Godfather
+## 2  2      107 The Terminator
+## 3  3      128     La La Land
+## 4  4      105   Ghostbusters
+## 5  5       NA          Alien
+## 6  6      107           &lt;NA&gt;
 </code></pre>
 
   </article>
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-28" style="background:;">
+<slide class="" id="slide-31" style="background:;">
   <hgroup>
     <h2>Dataframes</h2>
   </hgroup>
@@ -646,12 +683,10 @@ Filmes$Title
 <pre><code class="r">head(Filmes, 3) # Ver apenas 3 observações
 </code></pre>
 
-<pre><code>## # A tibble: 3 × 6
-##      ID          Title   Genre Duration Rating For18Plus
-##   &lt;int&gt;          &lt;chr&gt;   &lt;chr&gt;    &lt;int&gt;  &lt;dbl&gt;     &lt;lgl&gt;
-## 1     1  The Godfather   Drama      175    9.2      TRUE
-## 2     2 The Terminator  Action      107    8.0     FALSE
-## 3     3     La La Land Musical      128    8.4     FALSE
+<pre><code>##   ID Duration          Title
+## 1  1      175  The Godfather
+## 2  2      107 The Terminator
+## 3  3      128     La La Land
 </code></pre>
 
 <pre><code class="r">View(Filmes) # Ver a dataframe completa
@@ -661,29 +696,55 @@ Filmes$Title
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-29" style="background:;">
+<slide class="" id="slide-32" style="background:;">
   <hgroup>
     <h2>Dataframes</h2>
   </hgroup>
   <article data-timings="">
-    <h3><strong>Exercício 7:</strong></h3>
+    <h3><strong>Exercício 5:</strong></h3>
 
-<p>Visualizar a data frame Filmes com o comando &#39;head&#39;</p>
+<ul>
+<li>Completar o código com os dados que faltam. </li>
+<li>Visualizar a <em>dataframe</em> Filmes com o comando &#39;head&#39;</li>
+</ul>
 
-<h3><strong>Exercício 8:</strong></h3>
-
-<p>Criar uma nova data frame Filmes_Alt resultante da concatenaçao da data frame Filmes com o vector Class (ver exercício 4).</p>
+<pre><code class="r">Filmes &lt;- data.frame(ID = 1:6, 
+Title = c(&quot;The Godfather&quot;, &quot;The Terminator&quot;, &quot;La La Land&quot;, &quot;Ghostbusters&quot;, &quot;Alien&quot;, NA))
+</code></pre>
 
   </article>
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-30" style="background:;">
+<slide class="" id="slide-33" style="background:;">
   <hgroup>
     <h2>Valores em falta (missing values)</h2>
   </hgroup>
   <article data-timings="">
     <p>NA significa &quot;Not Available&quot;, &quot;Not Applicable&quot; ou &quot;Not Announced&quot;</p>
+
+<pre><code class="r"># Filmes
+
+#      ID          Title   Genre Duration Rating For18Plus
+#   &lt;int&gt;          &lt;chr&gt;   &lt;chr&gt;    &lt;int&gt;  &lt;dbl&gt;     &lt;lgl&gt;
+# 1     1  The Godfather   Drama      175    9.2      TRUE
+# 2     2 The Terminator  Action      107    8.0     FALSE
+# 3     3     La La Land Musical      128    8.4     FALSE
+# 4     4   Ghostbusters  Comedy      105    7.8     FALSE
+# 5     5          Alien    &lt;NA&gt;       NA    6.1      TRUE
+# 6     6           &lt;NA&gt;  Sci-Fi      107    6.7     FALSE
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-34" style="background:;">
+  <hgroup>
+    <h2>Valores em falta (missing values)</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Identificar NA&#39;s</p>
 
 <pre><code class="r">is.na(Filmes$Title)
 </code></pre>
@@ -701,37 +762,59 @@ Filmes$Title
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-31" style="background:;">
+<slide class="" id="slide-35" style="background:;">
   <hgroup>
     <h2>Valores em falta (missing values)</h2>
   </hgroup>
   <article data-timings="">
-    <p>Eliminar NA&#39;s</p>
+    <p>Propagaçao de NA&#39;s.</p>
 
-<pre><code class="r">Filmes$Title[!is.na(Filmes$Title)]
+<pre><code class="r">3 + NA
 </code></pre>
 
-<pre><code>## [1] &quot;The Godfather&quot;  &quot;The Terminator&quot; &quot;La La Land&quot;     &quot;Ghostbusters&quot;  
-## [5] &quot;Alien&quot;
+<pre><code>## [1] NA
 </code></pre>
 
-<pre><code class="r">Filmes[complete.cases(Filmes),]
+<pre><code class="r">x &lt;- c(1, 0, 2, 4, NA, 5)
+mean(x)
 </code></pre>
 
-<pre><code>## # A tibble: 4 × 6
-##      ID          Title   Genre Duration Rating For18Plus
-##   &lt;int&gt;          &lt;chr&gt;   &lt;chr&gt;    &lt;int&gt;  &lt;dbl&gt;     &lt;lgl&gt;
-## 1     1  The Godfather   Drama      175    9.2      TRUE
-## 2     2 The Terminator  Action      107    8.0     FALSE
-## 3     3     La La Land Musical      128    8.4     FALSE
-## 4     4   Ghostbusters  Comedy      105    7.8     FALSE
+<pre><code>## [1] NA
+</code></pre>
+
+<pre><code class="r">mean(x, na.rm = TRUE)
+</code></pre>
+
+<pre><code>## [1] 2.4
 </code></pre>
 
   </article>
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-32" style="background:;">
+<slide class="" id="slide-36" style="background:;">
+  <hgroup>
+    <h2>Valores em falta (missing values)</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Eliminar NA&#39;s</p>
+
+<pre><code class="r">Filmes[!is.na(Filmes$Title),]
+</code></pre>
+
+<pre><code>##   ID Duration          Title
+## 1  1      175  The Godfather
+## 2  2      107 The Terminator
+## 3  3      128     La La Land
+## 4  4      105   Ghostbusters
+## 5  5       NA          Alien
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-37" style="background:;">
   <hgroup>
     <h2>Funções</h2>
   </hgroup>
@@ -750,28 +833,34 @@ Filmes$Title
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-33" style="background:;">
+<slide class="" id="slide-38" style="background:;">
   <hgroup>
     <h2>Funções</h2>
   </hgroup>
   <article data-timings="">
-    <pre><code class="r">myFunction &lt;- function(input_argument){
+    <pre><code class="r">valor_medio &lt;- function(vector){
 
-  cube &lt;- input_argument*input_argument*input_argument
-  return(cube)
+  soma &lt;- sum(vector)
+  N &lt;- length(vector)
+  valor_medio &lt;- soma / N
+
+  return(valor_medio)
 }
-
-print(myFunction(2))
 </code></pre>
 
-<pre><code>## [1] 8
+<p>Utilizar a função:</p>
+
+<pre><code class="r">valor_medio(c(2,3,2,3))
+</code></pre>
+
+<pre><code>## [1] 2.5
 </code></pre>
 
   </article>
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-34" style="background:;">
+<slide class="" id="slide-39" style="background:;">
   <hgroup>
     <h2>Funções</h2>
   </hgroup>
@@ -800,41 +889,43 @@ FilmeOk(&quot;Alien&quot;)
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-35" style="background:;">
+<slide class="" id="slide-40" style="background:;">
   <hgroup>
     <h2>Ler dados a partir de ficheiros</h2>
   </hgroup>
   <article data-timings="">
-    <pre><code class="r">library(tidyverse)
-df &lt;- read_csv(&#39;C:/Users/GICpr/Desktop/exemplo.csv&#39;)
+    <pre><code class="r">df &lt;- read.csv(&#39;C:/Users/GICpr/Desktop/exemplo.csv&#39;)
+df
 </code></pre>
 
-<p>Exercício 7</p>
-
-<pre><code class="r"># Ler o ficheiro &#39;exemplo.csv&#39; disponível na pasta meetup3
+<pre><code>##    Nome Idade
+## 1  Joao    25
+## 2  Ines    23
+## 3   Ana    30
+## 4 Pedro    29
 </code></pre>
 
   </article>
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-36" style="background:;">
+<slide class="" id="slide-41" style="background:;">
   <hgroup>
     <h2>Let&#39;s swirl:</h2>
   </hgroup>
   <article data-timings="">
-    <pre><code class="r">if(&quot;swirl&quot; %in% installed.packages() == FALSE){install.packages(&quot;swirl&quot;)} 
+    <pre><code class="r">install.packages(&quot;swirl&quot;)
 library(swirl)
-install_from_swirl(&quot;R_Programming_Alt&quot;)
-swirl()
-# continue writing on the console
+install_from_swirl(&quot;R_Programming&quot;)
+
+swirl() # Iniciar o Swirl
 </code></pre>
 
   </article>
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-37" style="background:;">
+<slide class="" id="slide-42" style="background:;">
   <hgroup>
     <h2>Referências</h2>
   </hgroup>
@@ -850,60 +941,6 @@ swirl()
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-38">
-<hgroup>
-  <h2>Onde nos podem encontrar</h2>
-</hgroup>
-<article class = 'flexbox vcenter'>
-<p><a href="http://www.meetup.com/R-Ladies-Lisboa">www.meetup.com/R-Ladies-Lisboa</a></p>
-
-<p><a href="https://github.com/rladieslx">https://github.com/rladieslx</a></p>
-
-<p><a href="http://www.twitter.com/RLadiesLx/">www.twitter.com/RLadiesLx/</a> | <a href="http://www.facebook.com/groups/RLadiesLisboa">www.facebook.com/groups/RLadiesLisboa</a></p>
-
-<p><a href="https://twitter.com/RLadiesGlobal">https://twitter.com/RLadiesGlobal</a> | <a href="https://rladies.org">https://rladies.org</a></p>
-
-</article>
-<!-- Presenter Notes -->
-</slide>
-<slide class="" id="slide-39" style="background:;">
-  <hgroup>
-    <h2>Eventos futuros</h2>
-  </hgroup>
-  <article data-timings="">
-    <ul>
-<li>22/04/2017: R, Machine Learning &amp; Microsoft Azure</li>
-<li>20/05/2017: R-Packages: Tidyverse, Dplyr</li>
-</ul>
-
-  </article>
-  <!-- Presenter Notes -->
-</slide>
-
-<slide class="" id="slide-40">
-<hgroup>
-  <h2>Agradecimentos</h2>
-</hgroup>
-<article class = 'flexbox vcenter'>
-<p><img src="assets/img/R-LadiesGlobal_logo.png" title="plot of chunk r-ladies logo" alt="plot of chunk r-ladies logo" width="200px" /></p>
-
-<p><img src="assets/img/ilustat.png" title="plot of chunk ilustat logo" alt="plot of chunk ilustat logo" width="200px" /></p>
-
-<p><img src="assets/img/nmath_logo.png" title="plot of chunk ideia logo" alt="plot of chunk ideia logo" width="200px" /></p>
-
-</article>
-<!-- Presenter Notes -->
-</slide>
-<slide class="" id="slide-41">
-<hgroup>
-  <h2>Contactos</h2>
-</hgroup>
-<article class = 'flexbox vcenter'>
-<p><a href="mailto:lisboa@rladies.org">lisboa@rladies.org</a></p>
-
-</article>
-<!-- Presenter Notes -->
-</slide>
     <slide class="backdrop"></slide>
   </slides>
   <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
@@ -916,85 +953,85 @@ swirl()
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=2 title='Público-alvo:'>
+        data-slide=2 title='NA'>
          2
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=3 title='Objetivos da sessão:'>
+        data-slide=3 title='Onde nos podem encontrar:'>
          3
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=4 title='Conteúdos'>
+        data-slide=4 title='Eventos futuros'>
          4
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=5 title='NA'>
+        data-slide=5 title='Agradecimentos'>
          5
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=6 title='Podemos usar o R como uma calculadora'>
+        data-slide=6 title='Público-alvo'>
          6
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=7 title='Tipos de dados'>
+        data-slide=7 title='Conteúdos'>
          7
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=8 title='Tipos de dados'>
+        data-slide=8 title='Introdução ao R-Studio'>
          8
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=9 title='Tipos de dados'>
+        data-slide=9 title='Introdução ao R-Studio'>
          9
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=10 title='Atribuir valores a variáveis'>
+        data-slide=10 title='Tipos de dados'>
          10
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=11 title='Estrutura de dados'>
+        data-slide=11 title='Tipos de dados'>
          11
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=12 title='Estrutura de dados'>
+        data-slide=12 title='Tipos de dados'>
          12
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=13 title='Vectores'>
+        data-slide=13 title='Atribuir valores a variáveis'>
          13
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=14 title='Vectores'>
+        data-slide=14 title='Estrutura de dados'>
          14
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=15 title='Vectores'>
+        data-slide=15 title='Estrutura de dados'>
          15
       </a>
     </li>
@@ -1012,19 +1049,19 @@ swirl()
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=18 title='Matrizes'>
+        data-slide=18 title='Vectores'>
          18
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=19 title='Matrizes'>
+        data-slide=19 title='Vectores'>
          19
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=20 title='Matrizes'>
+        data-slide=20 title='Vectores'>
          20
       </a>
     </li>
@@ -1036,25 +1073,25 @@ swirl()
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=22 title='Dataframes'>
+        data-slide=22 title='Matrizes'>
          22
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=23 title='Dataframes'>
+        data-slide=23 title='Matrizes'>
          23
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=24 title='Dataframes'>
+        data-slide=24 title='Matrizes'>
          24
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=25 title='Dataframes'>
+        data-slide=25 title='Matrizes'>
          25
       </a>
     </li>
@@ -1084,74 +1121,80 @@ swirl()
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=30 title='Valores em falta (missing values)'>
+        data-slide=30 title='Dataframes'>
          30
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=31 title='Valores em falta (missing values)'>
+        data-slide=31 title='Dataframes'>
          31
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=32 title='Funções'>
+        data-slide=32 title='Dataframes'>
          32
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=33 title='Funções'>
+        data-slide=33 title='Valores em falta (missing values)'>
          33
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=34 title='Funções'>
+        data-slide=34 title='Valores em falta (missing values)'>
          34
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=35 title='Ler dados a partir de ficheiros'>
+        data-slide=35 title='Valores em falta (missing values)'>
          35
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=36 title='Let&#39;s swirl:'>
+        data-slide=36 title='Valores em falta (missing values)'>
          36
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=37 title='Referências'>
+        data-slide=37 title='Funções'>
          37
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=38 title='Onde nos podem encontrar'>
+        data-slide=38 title='Funções'>
          38
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=39 title='Eventos futuros'>
+        data-slide=39 title='Funções'>
          39
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=40 title='Agradecimentos'>
+        data-slide=40 title='Ler dados a partir de ficheiros'>
          40
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=41 title='Contactos'>
+        data-slide=41 title='Let&#39;s swirl:'>
          41
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=42 title='Referências'>
+         42
       </a>
     </li>
   </ul>

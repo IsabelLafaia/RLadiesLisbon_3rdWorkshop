@@ -2,10 +2,9 @@
 
 Estruturas multidimensionais usadas para armazenar tabelas:
 ```{r}
-library(tidyverse)
-df <- data_frame(ID = 1:6, Duration = c(175,107,128,105,NA,107), 
+Filmes <- data.frame(ID = 1:6, Duration = c(175,107,128,105,NA,107), 
 Title = c("The Godfather", "The Terminator", "La La Land", "Ghostbusters", "Alien", NA))
-df
+Filmes
 ```
 
 ---
@@ -21,19 +20,6 @@ Uma *dataframe* pode ser interpretada como:
 <img src="Images/DataTypes_MatrixDataFrameList.png" style="width: 1000px;"/>
 
 ---
-## Dataframes
-
-### **Exercício 6** 
-
-Completar o código com os dados que faltam. Armazenar o resultado numa *dataframe* com o nome Filmes.
-```{r, eval = FALSE}
-library(tidyverse)
-data_frame(ID = 1:6, 
-Title = c("The Godfather", "The Terminator", "La La Land", "Ghostbusters", "Alien", NA))
-
-```
-
----
 
 ## Dataframes
 
@@ -47,7 +33,7 @@ Filmes[2,2]
 
 ```{r}
 # Aceder por nome da variável/coluna:
-Filmes$Title
+Filmes$Duration
 ```
 
 ---
@@ -86,10 +72,12 @@ View(Filmes) # Ver a dataframe completa
 
 ## Dataframes
 
-### **Exercício 7:** 
 
-Visualizar a *dataframe* Filmes com o comando 'head'
+### **Exercício 5:** 
 
-### **Exercício 8:** 
-
-Criar uma nova *dataframe* Filmes_Alt resultante da concatenaçao da *dataframe* Filmes com o vector Class (ver exercício 4).
+* Completar o código com os dados que faltam. 
+* Visualizar a *dataframe* Filmes com o comando 'head'
+```{r, eval = FALSE}
+Filmes <- data.frame(ID = 1:6, 
+Title = c("The Godfather", "The Terminator", "La La Land", "Ghostbusters", "Alien", NA))
+```

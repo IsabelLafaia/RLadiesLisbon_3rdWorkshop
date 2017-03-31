@@ -13,13 +13,19 @@ Porquê utilizar funções:
 ## Funções
 
 ```{r}
-myFunction <- function(input_argument){
+valor_medio <- function(vector){
   
-  cube <- input_argument*input_argument*input_argument
-  return(cube)
+  soma <- sum(vector)
+  N <- length(vector)
+  valor_medio <- soma / N
+  
+  return(valor_medio)
 }
+```
 
-print(myFunction(2))
+Utilizar a função:
+```{r}
+valor_medio(c(2,3,2,3))
 ```
 
 ---
@@ -27,6 +33,16 @@ print(myFunction(2))
 ## Funções
 
 Exemplo: Escolher um filme 
+
+```{r, echo = FALSE, message=FALSE}
+Filmes <- data.frame(ID = 1:6, 
+Title = c("The Godfather", "The Terminator", "La La Land", "Ghostbusters", "Alien", NA),
+Genre = c("Drama","Action","Musical","Comedy",NA,"Sci-Fi"),
+Duration = c(175L, 107L, 128L, 105L, NA, 107L),
+Rating = c(9.2, 8.0, 8.4, 7.8, 6.1, 6.7),
+For18Plus = For18Plus
+)
+
 ```{r, warning= FALSE}
 FilmeOk <- function(Nome_Filme){
   

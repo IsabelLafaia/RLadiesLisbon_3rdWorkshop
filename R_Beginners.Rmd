@@ -1,7 +1,7 @@
 ---
 title: "Linguagem R para iniciados"
-subtitle: "`r format(Sys.time(), '%d %B %Y')`"
-author: ""
+subtitle: "1 de Abril de 2017"
+author: "Por Isabel Lafaia, R-Ladies Lisboa"
 logo: "R-LadiesGlobal.png"
 framework: io2012
 highlighter: highlight.js # {highlight.js, prettify, highlight}
@@ -26,7 +26,7 @@ library(slidify)
 
 ## Apresentação da comunidade R-Ladies 
 
-### *"A World-Wide organization to promote gender diversity in the R community"*
+### Objectivo: promover a diversidade de género na comunidade R.
 
 ```{r global map, out.width = "600px", echo = FALSE}
 knitr::include_graphics("assets/img/RLadiesGlobal_LeafletMap.png")
@@ -34,9 +34,49 @@ knitr::include_graphics("assets/img/RLadiesGlobal_LeafletMap.png")
 
 4000 R-Ladies e 30 cidades iniciaram um grupo R-Ladies
 
+--- &vcenter
+
+**Programar não é uma atividade a solo. Devemos fazer perguntas e cooperar. Todos passamos pelas mesmas dificuldades.**
+
+---
+## Onde nos podem encontrar:
+
+* meetup.com
+* github.com
+* twitter
+* facebook
+* rladies.org
+
+## Contacto
+
+**lisboa@rladies.org**
+
+---
+## Eventos futuros
+
+* 22/04/2017: R, Machine Learning & Microsoft Azure
+* 20/05/2017: R-Packages: Tidyverse, Dplyr
+
+
+--- &vcenter 
+## Agradecimentos
+
+```{r r-ladies logo, out.width= '200px', echo = FALSE}
+knitr::include_graphics("assets/img/R-LadiesGlobal_logo.png")
+```
+
+
+```{r ilustat logo, out.width = "200px", echo = FALSE}
+knitr::include_graphics("assets/img/ilustat.png")
+```
+
+```{r ideia logo, out.width = "200px", echo = FALSE}
+knitr::include_graphics("assets/img/nmath_logo.png")
+```
+
 ---
   
-## Público-alvo:
+## Público-alvo
 
 * Para quem nunca programou
 * Para quem nunca programou em R
@@ -44,31 +84,21 @@ knitr::include_graphics("assets/img/RLadiesGlobal_LeafletMap.png")
 
 ---
 
-## Objetivos da sessão:
-
-No final da sessão deverão ser capazes de: 
-
-*	Identificar e classificar dados
-*	Construir bases de dados
-*	Perceber funções simples e a sua dinâmica 
-*	Ler dados a partir de ficheiros
-*	Utilizar a ajuda do R-Studio
-
----
-
 ## Conteúdos
 
 * Tipos de dados 
 * Atribuir valores a variáveis
-* Estrutura de dados (vectores, matrizes e Data Frames)
+* Estrutura de dados (vectores, matrizes e *dataframes*)
 * Funções simples
 * Ler dados a partir de ficheiros
 
---- &vcenter
+---
 
-**Programar não é uma atividade a solo. Devemos fazer perguntas e cooperar. Todos passamos pelas mesmas dificuldades.**
+## Introdução ao R-Studio
 
 ---
+
+## Introdução ao R-Studio
 
 ### Podemos usar o R como uma calculadora
 
@@ -131,11 +161,11 @@ Experimentar um cálculo à escolha.
 
 ## Let's swirl:
 ```{r, eval = FALSE}
-if("swirl" %in% installed.packages() == FALSE){install.packages("swirl")} 
+install.packages("swirl")
 library(swirl)
 install_from_swirl("R_Programming")
-swirl()
-# continue writing on the console
+
+swirl() # Iniciar o Swirl
 ```
 
 ---
@@ -146,44 +176,4 @@ swirl()
 * https://github.com/rladies/meetup-presentations_london/blob/master/2016-10_Beginner_Dropin/slides.Rmd
 * https://ase.tufts.edu/bugs/guide/assets/R%20Cookbook.pdf
 
-
---- &vcenter
-## Onde nos podem encontrar 
-
-www.meetup.com/R-Ladies-Lisboa
-
-https://github.com/rladieslx
-
-www.twitter.com/RLadiesLx/ | www.facebook.com/groups/RLadiesLisboa
-
-https://twitter.com/RLadiesGlobal | https://rladies.org
-
----
-## Eventos futuros
-
-* 22/04/2017: R, Machine Learning & Microsoft Azure
-* 20/05/2017: R-Packages: Tidyverse, Dplyr
-
-
---- &vcenter 
-## Agradecimentos
-
-```{r r-ladies logo, out.width= '200px', echo = FALSE}
-knitr::include_graphics("assets/img/R-LadiesGlobal_logo.png")
-```
-
-
-```{r ilustat logo, out.width = "200px", echo = FALSE}
-knitr::include_graphics("assets/img/ilustat.png")
-```
-
-```{r ideia logo, out.width = "200px", echo = FALSE}
-knitr::include_graphics("assets/img/nmath_logo.png")
-```
-
-
---- &vcenter 
-## Contactos
-
-lisboa@rladies.org
 
